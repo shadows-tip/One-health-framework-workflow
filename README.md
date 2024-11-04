@@ -30,15 +30,6 @@ This concludes the entire workflow. Execute two files to evaluate the machine le
 python MachineLearning.py
 python Plot.py
 ```
-### Quick Start
-We recommend using the pycharm compiler to edit our files. We have packaged the propagation dynamics into a package so that users can quickly use the model to simulate and predict diseases according to their intervention needs. The following provides an example of how to use it, and the example code is in the test.py file.
-```python
-from ModelPackage import Model
 
-# Call propagation dynamics model for testing
-model = Model(T=80, Nd=40000)
-model.set_param(intervene_time=50, intervene_meas=1, intervene_param=[0.6])
-res = model.get_result(label=['Ih'], plot=True)
-```
 ### Acknowledgments
 Thank you to all the contributors who have improved this project in various ways!
